@@ -1,0 +1,270 @@
+HTML:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEMORY CARD GAME</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Memory Game</h1>
+    <h2>Test your memory... Find the matching cards!</h2>
+    <div id="box">
+        <table id="table">
+            <tr>
+                <td>
+                    <div class="main" id="btn1" onclick="game(this.id)">
+                        <div class="front"></div>
+                        <div class="back" id="1"></div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="main" id="btn2" onclick="game(this.id)">
+                        <div class="front"></div>
+                        <div class="back" id="2"></div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="main" id="btn3" onclick="game(this.id)">
+                        <div class="front"></div>
+                        <div class="back" id="3"></div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="main" id="btn4" onclick="game(this.id)">
+                        <div class="front"></div>
+                        <div class="back" id="4"></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+
+                <td>
+                    <div class="main" id="btn5" onclick="game(this.id)">
+                        <div class="front"></div>
+                        <div class="back" id="5"></div>
+                    </div>
+                </td>
+                
+                <td>
+                    <div class="main" id="btn6" onclick="game(this.id)">
+                        <div class="front"></div>
+                        <div class="back" id="6"></div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="main" id="btn7" onclick="game(this.id)">
+                        <div class="front"></div>
+                        <div class="back" id="7"></div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="main" id="btn8" onclick="game(this.id)">
+                        <div class="front"></div>
+                        <div class="back" id="8"></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="main" id="btn9" onclick="game(this.id)">
+                        <div class="front"></div>
+                        <div class="back" id="9"></div>
+                    </div>
+                </td>
+                
+                <td>
+                    <div class="main" id="btn10" onclick="game(this.id)">
+                        <div class="front"></div>
+                        <div class="back" id="10"></div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="main" id="btn11" onclick="game(this.id)">
+                        <div class="front"></div>
+                        <div class="back" id="11"></div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="main" id="btn12" onclick="game(this.id)">
+                        <div class="front"></div>
+                        <div class="back" id="12"></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                      <td>
+                    <div class="main" id="btn13" onclick="game(this.id)">
+                        <div class="front"></div>
+                        <div class="back" id="13"></div>
+                    </div>
+                </td>
+                
+                <td>
+                    <div class="main" id="btn14" onclick="game(this.id)">
+                        <div class="front"></div>
+                        <div class="back" id="14"></div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="main" id="btn15" onclick="game(this.id)">
+                        <div class="front"></div>
+                        <div class="back" id="15"></div>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="main" id="btn16" onclick="game(this.id)">
+                        <div class="front"></div>
+                        <div class="back" id="16"></div>
+                    </div>
+                </td>
+
+            </tr>
+        </table>
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+CSS:
+
+body {
+  background-image: url('https://media.istockphoto.com/id/1408807125/vector/summer-background-with-colorful-leaking-line.jpg?s=612x612&w=0&k=20&c=eutLgXVYZCMPRpxxE3-urMt0Ac4hsTX1XkcC_m01rdY=');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+h1{
+    text-align: center;
+    margin-right: 40px;
+    font-size: xx-large;
+    font-family: fantasy;
+    font-weight: boldest;
+    color: rgb(118, 58, 179);
+}
+h2{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(103, 18, 152);
+    margin-right: 50px;
+}
+
+#box{
+    margin-left: 33%;
+}
+
+.main{
+    width: 100px;
+    height: 130px;
+    position: relative;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    border: solid rgb(68, 0, 79) 2px;
+}
+
+.back, .front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.back{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotateY(180deg);
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.front{
+    background-color: rgb(240, 134, 217);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+
+
+
+
+JS:
+
+var btnNo = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16"];
+
+var image = ["🦋","🦅","🐴","🐨","🐣","🐝","🐹","🐶","🐄","🦥","🪰","🦧","🦈","🐍","🦊","🦒"];
+
+// Assign emoji pairs
+for (var i = 0; i < 8; i++) {
+    var choose1 = Math.floor(Math.random() * btnNo.length);
+    document.getElementById(btnNo[choose1]).innerHTML = image[i];
+    btnNo.splice(choose1, 1);
+
+    var choose2 = Math.floor(Math.random() * btnNo.length);
+    document.getElementById(btnNo[choose2]).innerHTML = image[i];
+    btnNo.splice(choose2, 1);
+}
+
+var start = true;
+var pre;
+var preid;
+var x = 0;
+
+function game(clicked_id) {
+    var card = document.getElementById(clicked_id);
+    var back = card.lastElementChild;
+
+    card.style.transform = "rotateY(180deg)";
+    card.style.transition = "transform 0.8s";
+
+    if (start) {
+        pre = back.innerHTML;
+        preid = clicked_id;
+        start = false;
+    } else {
+        setTimeout(() => {
+            if (back.innerHTML === pre) {
+                document.getElementById(preid).style.visibility = "hidden";
+                card.style.visibility = "hidden";
+                x += 2;
+
+                if (x === 16) {
+                    alert("Good job! You found all the matching cards!");
+                }
+            } else {
+                document.getElementById(preid).style.transform = "rotateY(0deg)";
+                card.style.transform = "rotateY(0deg)";
+            }
+            start = true;
+        }, 800);
+    }
+}
